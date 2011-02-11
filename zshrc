@@ -32,7 +32,11 @@ unsetopt auto_name_dirs
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
 bindkey -v
+autoload -U edit-command-line
+zle -N edit-command-line
+bindkey '^E' edit-command-line
 bindkey '^R' history-incremental-search-backward
+bindkey '^S' history-incremental-search-forward
 bindkey '^P' history-search-backward
 bindkey '^N' history-search-forward
 
