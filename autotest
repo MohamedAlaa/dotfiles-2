@@ -1,2 +1,8 @@
 require 'autotest/growl'
 
+Autotest.add_hook :initialize do |autotest|
+  %w[.git .DS_Store db log tmp Gemfile.lock].each do |e|
+    autotest.add_exception(e)
+  end
+end
+

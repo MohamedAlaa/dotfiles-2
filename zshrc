@@ -28,8 +28,9 @@ export MANPATH="/usr/local/share/man:/usr/local/man:/usr/local/mysql/man:/usr/lo
 export INFOPATH="/usr/local/share/info:$INFOPATH"
 export MAGICK_HOME="/usr/local/Cellar/imagemagick/6.6.2-0"
 
-unsetopt auto_name_dirs
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+# RVM is loaded in .zshenv so vim can see it
+# unsetopt auto_name_dirs
+# [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
 bindkey -v
 autoload -U edit-command-line
