@@ -23,6 +23,7 @@
   untracked = cyan
 [core]
   excludesfile = /Users/edgarjs/.gitignore
+  editor = /usr/bin/vim
 [apply]
   whitespace = nowarn
 [github]
