@@ -1,6 +1,6 @@
 [user]
-  name = @edgarjs
-  email = <my email>
+  name = edgarjs
+  email = <email>
 [alias]
   co = checkout
   ci = commit
@@ -22,21 +22,10 @@
   changed = green
   untracked = cyan
 [core]
-  excludesfile = /Users/edgarjs/.gitignore
   editor = /usr/bin/vim
 [apply]
   whitespace = nowarn
 [github]
   user = edgarjs
-  token = <github token>
-[pivotal]
-  full-name = Edgar Suarez
-[merge]
+[mergetool]
   keepBackup = false
-  tool = opendiff
-[difftool "Kaleidoscope"]
-  cmd = ksdiff-wrapper git \"$LOCAL\" \"$REMOTE\"
-[difftool]
-  prompt = false
-[diff]
-  tool = Kaleidoscope
