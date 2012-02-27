@@ -1,0 +1,16 @@
+Host ginger
+    HostName 50.16.153.9
+    User deploy
+
+# Ginger automator
+Host automator
+    HostName 50.19.72.223
+    User deploy
+
+Host deli-encoder-staging
+    HostName ec2-107-20-20-214.compute-1.amazonaws.com
+    User deploy
+
+Host fetcher
+    HostName 50.56.125.65
+    User fetcher
