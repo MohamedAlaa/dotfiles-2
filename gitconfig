@@ -1,6 +1,6 @@
 [user]
   name = edgarjs
-  email = <email>
+  email = edgar.js@gmail.com
 [alias]
   co = checkout
   ci = commit
@@ -23,6 +23,7 @@
   untracked = cyan
 [core]
   editor = /usr/bin/vim
+  excludesfile = /Users/edgarjs/.gitignore
 [apply]
   whitespace = nowarn
 [github]
