@@ -3,3 +3,11 @@
 *~
 .*.swp
 .*.swo
+build/
+*.pyc
+*~.nib/
+*.pbxuser
+*.perspective
+*.perspectivev3
+*.xcworkspace/
+xcuserdata/
