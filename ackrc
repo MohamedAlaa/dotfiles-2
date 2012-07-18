@@ -1,1 +1,2 @@
 --type-add=js=.coffee,.js.erb
+--type-add=css=.sass,.scss
