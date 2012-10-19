@@ -28,3 +28,11 @@
   whitespace = nowarn
 [mergetool]
   keepBackup = false
+[merge]
+  tool = opendiff
+[difftool "Kaleidoscope"]
+  cmd = ksdiff-wrapper git \"$LOCAL\" \"$REMOTE\"
+[difftool]
+  prompt = false
+[diff]
+  tool = Kaleidoscope
