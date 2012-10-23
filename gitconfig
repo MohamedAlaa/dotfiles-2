@@ -36,3 +36,5 @@
   prompt = false
 [diff]
   tool = Kaleidoscope
+[push]
+  default = upstream
