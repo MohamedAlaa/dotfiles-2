@@ -1,2 +1,7 @@
 --type-add=js=.coffee,.js.erb
 --type-add=css=.sass,.scss
+--ignore-dir=tmp
+--ignore-dir=.git
+--ignore-dir=.bundle
+--ignore-dir=vendor
+--ignore-dir=log
