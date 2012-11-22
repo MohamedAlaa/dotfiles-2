@@ -6,4 +6,4 @@
 *.pyc
 *~.nib/
 *.xcworkspace/
-/xcuserdata
+xcuserdata/
