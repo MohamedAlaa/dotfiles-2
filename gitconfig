@@ -22,22 +22,25 @@
   changed = green
   untracked = cyan
 [core]
-  editor = /usr/bin/vim
+  editor = /usr/local/bin/st3 -w
   excludesfile = /Users/edgarjs/.gitignore
 [apply]
   whitespace = nowarn
 [mergetool]
   keepBackup = false
-  prompt = false
-[mergetool "Kaleidoscope"]
-  cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
 [merge]
-  tool = Kaleidoscope
-[difftool "Kaleidoscope"]
-  cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+  tool = Sublime
 [difftool]
-  prompt = false
+	prompt = false
 [diff]
-  tool = Kaleidoscope
+	tool = Kaleidoscope
 [push]
   default = upstream
+[difftool "Kaleidoscope"]
+	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+[mergetool "Kaleidoscope"]
+	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+	trustExitCode = true
+[mergetool "Sublime"]
+  cmd = subl -w \"$MERGED\"
+  trustExitCode = false
