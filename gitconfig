@@ -1,5 +1,5 @@
 [user]
-  name = edgarjs
+	name = edgarjs
   email = edgar.js@gmail.com
 [alias]
   co = checkout
@@ -22,7 +22,7 @@
   changed = green
   untracked = cyan
 [core]
-  editor = /usr/local/bin/st3 -w
+  editor = subl -w
   excludesfile = /Users/edgarjs/.gitignore
 [apply]
   whitespace = nowarn
